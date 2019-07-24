@@ -41,7 +41,7 @@ class ViewController: UIViewController {
 
 extension ViewController: AuthServiceDelegate {
     func success() {
-        
+        ScreenManager.setupInitialViewController()
     }
     
     func failure(error: String) {

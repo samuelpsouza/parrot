@@ -30,6 +30,8 @@
 		C83CDBB322E8DAA700723759 /* PostRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDBB222E8DAA700723759 /* PostRequestFactory.swift */; };
 		C83CDBB622E8DEA200723759 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDBB522E8DEA200723759 /* PostService.swift */; };
 		C83CDBB922E8E2CF00723759 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDBB822E8E2CF00723759 /* PostViewModel.swift */; };
+		C83CDBC322E8EF6D00723759 /* Posts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83CDBC522E8EF6D00723759 /* Posts.storyboard */; };
+		C83CDBC722E8F08200723759 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDBC622E8F08200723759 /* PostsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		C83CDBB222E8DAA700723759 /* PostRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestFactory.swift; sourceTree = "<group>"; };
 		C83CDBB522E8DEA200723759 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		C83CDBB822E8E2CF00723759 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		C83CDBC422E8EF6D00723759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Posts.storyboard; sourceTree = "<group>"; };
+		C83CDBC622E8F08200723759 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,9 +185,9 @@
 		839F685B22E8822D00FD6A61 /* Parrot */ = {
 			isa = PBXGroup;
 			children = (
-				C83CDBAD22E8D28400723759 /* Post */,
 				83409E5722E88426006F8A96 /* Application */,
 				83409E6022E8899B006F8A96 /* Auth */,
+				C83CDBAD22E8D28400723759 /* Post */,
 				839F686022E8822D00FD6A61 /* Main.storyboard */,
 				839F686522E8822F00FD6A61 /* LaunchScreen.storyboard */,
 				839F686822E8822F00FD6A61 /* Info.plist */,
@@ -211,9 +215,11 @@
 		C83CDBAD22E8D28400723759 /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				C83CDBBC22E8EAEA00723759 /* Controller */,
 				C83CDBB722E8E2BE00723759 /* ViewModel */,
 				C83CDBB422E8DE7800723759 /* Service */,
 				C83CDBAE22E8D2EA00723759 /* Model */,
+				C83CDBC522E8EF6D00723759 /* Posts.storyboard */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -241,6 +247,14 @@
 				C83CDBB822E8E2CF00723759 /* PostViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C83CDBBC22E8EAEA00723759 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C83CDBC622E8F08200723759 /* PostsViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83CDBC322E8EF6D00723759 /* Posts.storyboard in Resources */,
 				83409E5E22E884A7006F8A96 /* Localizable.strings in Resources */,
 				839F686722E8822F00FD6A61 /* LaunchScreen.storyboard in Resources */,
 				83409E5C22E88485006F8A96 /* Colors.json in Resources */,
@@ -390,6 +405,7 @@
 				C83CDBA422E8C03E00723759 /* UserViewModel.swift in Sources */,
 				C83CDB9E22E8BC4200723759 /* AuthService.swift in Sources */,
 				83409E6E22E89934006F8A96 /* Colors.swift in Sources */,
+				C83CDBC722E8F08200723759 /* PostsViewController.swift in Sources */,
 				C83CDBAA22E8CDA100723759 /* SessionControl.swift in Sources */,
 				839F685D22E8822D00FD6A61 /* AppDelegate.swift in Sources */,
 				83409E6B22E89934006F8A96 /* Localizable.swift in Sources */,
@@ -415,6 +431,14 @@
 				839F686622E8822F00FD6A61 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C83CDBC522E8EF6D00723759 /* Posts.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C83CDBC422E8EF6D00723759 /* Base */,
+			);
+			name = Posts.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
