@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0D29AF7937FB70439B16395F /* Pods_parrot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69ADEB4F5FA7852DAC29900D /* Pods_parrot.framework */; };
 		83409E5C22E88485006F8A96 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 83409E5B22E88485006F8A96 /* Colors.json */; };
 		83409E5E22E884A7006F8A96 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83409E5D22E884A7006F8A96 /* Localizable.strings */; };
+		83409E6622E88ED1006F8A96 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83409E6522E88ED1006F8A96 /* User.swift */; };
 		839F685D22E8822D00FD6A61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F685C22E8822D00FD6A61 /* AppDelegate.swift */; };
 		839F685F22E8822D00FD6A61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F685E22E8822D00FD6A61 /* ViewController.swift */; };
 		839F686222E8822D00FD6A61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F686022E8822D00FD6A61 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		7C30305A1DE68AD00D0F1EA9 /* Pods-parrot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parrot.debug.xcconfig"; path = "Target Support Files/Pods-parrot/Pods-parrot.debug.xcconfig"; sourceTree = "<group>"; };
 		83409E5B22E88485006F8A96 /* Colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
 		83409E5D22E884A7006F8A96 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		83409E6522E88ED1006F8A96 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		839F685922E8822D00FD6A61 /* parrot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parrot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		839F685C22E8822D00FD6A61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		839F685E22E8822D00FD6A61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +60,6 @@
 				7C30305A1DE68AD00D0F1EA9 /* Pods-parrot.debug.xcconfig */,
 				344FFBB8F5822E3F1E916839 /* Pods-parrot.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -97,6 +98,46 @@
 			path = Generators;
 			sourceTree = "<group>";
 		};
+		83409E6022E8899B006F8A96 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				83409E6422E88B9E006F8A96 /* Controller */,
+				83409E6322E88B98006F8A96 /* Model */,
+				83409E6222E88B91006F8A96 /* Service */,
+				83409E6122E88B82006F8A96 /* ViewModel */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		83409E6122E88B82006F8A96 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		83409E6222E88B91006F8A96 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		83409E6322E88B98006F8A96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83409E6522E88ED1006F8A96 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83409E6422E88B9E006F8A96 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		839F685022E8822D00FD6A61 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +159,7 @@
 		839F685B22E8822D00FD6A61 /* Parrot */ = {
 			isa = PBXGroup;
 			children = (
+				83409E6022E8899B006F8A96 /* Auth */,
 				83409E5722E88426006F8A96 /* Application */,
 				839F685E22E8822D00FD6A61 /* ViewController.swift */,
 				839F686022E8822D00FD6A61 /* Main.storyboard */,
@@ -264,6 +306,7 @@
 			files = (
 				839F685F22E8822D00FD6A61 /* ViewController.swift in Sources */,
 				839F685D22E8822D00FD6A61 /* AppDelegate.swift in Sources */,
+				83409E6622E88ED1006F8A96 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
