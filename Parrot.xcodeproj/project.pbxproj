@@ -11,6 +11,10 @@
 		83409E5C22E88485006F8A96 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 83409E5B22E88485006F8A96 /* Colors.json */; };
 		83409E5E22E884A7006F8A96 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83409E5D22E884A7006F8A96 /* Localizable.strings */; };
 		83409E6622E88ED1006F8A96 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83409E6522E88ED1006F8A96 /* User.swift */; };
+		83409E6B22E89934006F8A96 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83409E6722E89933006F8A96 /* Localizable.swift */; };
+		83409E6C22E89934006F8A96 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83409E6822E89933006F8A96 /* Storyboards.swift */; };
+		83409E6D22E89934006F8A96 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83409E6922E89933006F8A96 /* Assets.swift */; };
+		83409E6E22E89934006F8A96 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83409E6A22E89934006F8A96 /* Colors.swift */; };
 		839F685D22E8822D00FD6A61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F685C22E8822D00FD6A61 /* AppDelegate.swift */; };
 		839F685F22E8822D00FD6A61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F685E22E8822D00FD6A61 /* ViewController.swift */; };
 		839F686222E8822D00FD6A61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F686022E8822D00FD6A61 /* Main.storyboard */; };
@@ -25,6 +29,10 @@
 		83409E5B22E88485006F8A96 /* Colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
 		83409E5D22E884A7006F8A96 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		83409E6522E88ED1006F8A96 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		83409E6722E89933006F8A96 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		83409E6822E89933006F8A96 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		83409E6922E89933006F8A96 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		83409E6A22E89934006F8A96 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		839F685922E8822D00FD6A61 /* parrot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parrot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		839F685C22E8822D00FD6A61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		839F685E22E8822D00FD6A61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +92,10 @@
 		83409E5922E88434006F8A96 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				83409E6922E89933006F8A96 /* Assets.swift */,
+				83409E6A22E89934006F8A96 /* Colors.swift */,
+				83409E6722E89933006F8A96 /* Localizable.swift */,
+				83409E6822E89933006F8A96 /* Storyboards.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -134,6 +146,7 @@
 		83409E6422E88B9E006F8A96 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				839F685E22E8822D00FD6A61 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -161,7 +174,6 @@
 			children = (
 				83409E6022E8899B006F8A96 /* Auth */,
 				83409E5722E88426006F8A96 /* Application */,
-				839F685E22E8822D00FD6A61 /* ViewController.swift */,
 				839F686022E8822D00FD6A61 /* Main.storyboard */,
 				839F686522E8822F00FD6A61 /* LaunchScreen.storyboard */,
 				839F686822E8822F00FD6A61 /* Info.plist */,
@@ -305,7 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				839F685F22E8822D00FD6A61 /* ViewController.swift in Sources */,
+				83409E6C22E89934006F8A96 /* Storyboards.swift in Sources */,
+				83409E6D22E89934006F8A96 /* Assets.swift in Sources */,
+				83409E6E22E89934006F8A96 /* Colors.swift in Sources */,
 				839F685D22E8822D00FD6A61 /* AppDelegate.swift in Sources */,
+				83409E6B22E89934006F8A96 /* Localizable.swift in Sources */,
 				83409E6622E88ED1006F8A96 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
