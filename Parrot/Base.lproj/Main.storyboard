@@ -34,7 +34,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8O-XQ-36S">
                                 <rect key="frame" x="100" y="560" width="214" height="40"/>
@@ -95,6 +95,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="r8O-XQ-36S" id="MxA-ZV-Ylh"/>
                         <outlet property="logoImageView" destination="Bi4-P0-jTh" id="Cbz-eH-7tP"/>
                         <outlet property="usernameTextField" destination="CoZ-5E-5N2" id="hXB-7Y-UhB"/>
                     </connections>

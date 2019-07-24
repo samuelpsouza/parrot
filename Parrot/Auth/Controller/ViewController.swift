@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var usernameTextField: UITextField!
     
@@ -17,6 +18,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.logoImageView.image = Asset.logo.image
+        
+        self.loginButton.layer.cornerRadius = 5
     }
 
     @IBAction func loginButton(_ sender: Any) {
