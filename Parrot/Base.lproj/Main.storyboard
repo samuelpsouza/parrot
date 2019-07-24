@@ -97,6 +97,7 @@
                     <connections>
                         <outlet property="loginButton" destination="r8O-XQ-36S" id="MxA-ZV-Ylh"/>
                         <outlet property="logoImageView" destination="Bi4-P0-jTh" id="Cbz-eH-7tP"/>
+                        <outlet property="passwordTextField" destination="RDh-mx-bNg" id="1sv-8W-nES"/>
                         <outlet property="usernameTextField" destination="CoZ-5E-5N2" id="hXB-7Y-UhB"/>
                     </connections>
                 </viewController>
@@ -104,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="37.681159420289859" y="18.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="rqf-ef-FvP">
             <objects>
-                <viewController id="qT4-0n-uUm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignupViewController" id="qT4-0n-uUm" customClass="SignupViewController" customModule="parrot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nvd-Yz-orh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

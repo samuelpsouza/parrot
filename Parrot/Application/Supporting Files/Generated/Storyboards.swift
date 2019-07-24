@@ -62,6 +62,8 @@ internal enum StoryboardScene {
     internal static let storyboardName = "Main"
 
     internal static let initialScene = InitialSceneType<parrot.ViewController>(storyboard: Main.self)
+
+    internal static let signupViewController = SceneType<parrot.SignupViewController>(storyboard: Main.self, identifier: "SignupViewController")
   }
 }
 
