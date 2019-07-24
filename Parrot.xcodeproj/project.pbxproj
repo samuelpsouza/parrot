@@ -26,6 +26,10 @@
 		C83CDBA622E8CAC700723759 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDBA522E8CAC700723759 /* SignupViewController.swift */; };
 		C83CDBA822E8CD3800723759 /* ScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDBA722E8CD3800723759 /* ScreenManager.swift */; };
 		C83CDBAA22E8CDA100723759 /* SessionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDBA922E8CDA100723759 /* SessionControl.swift */; };
+		C83CDBB022E8D2FE00723759 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDBAF22E8D2FE00723759 /* Post.swift */; };
+		C83CDBB322E8DAA700723759 /* PostRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDBB222E8DAA700723759 /* PostRequestFactory.swift */; };
+		C83CDBB622E8DEA200723759 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDBB522E8DEA200723759 /* PostService.swift */; };
+		C83CDBB922E8E2CF00723759 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDBB822E8E2CF00723759 /* PostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		C83CDBA522E8CAC700723759 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		C83CDBA722E8CD3800723759 /* ScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenManager.swift; sourceTree = "<group>"; };
 		C83CDBA922E8CDA100723759 /* SessionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionControl.swift; sourceTree = "<group>"; };
+		C83CDBAF22E8D2FE00723759 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C83CDBB222E8DAA700723759 /* PostRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestFactory.swift; sourceTree = "<group>"; };
+		C83CDBB522E8DEA200723759 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		C83CDBB822E8E2CF00723759 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +181,7 @@
 		839F685B22E8822D00FD6A61 /* Parrot */ = {
 			isa = PBXGroup;
 			children = (
+				C83CDBAD22E8D28400723759 /* Post */,
 				83409E5722E88426006F8A96 /* Application */,
 				83409E6022E8899B006F8A96 /* Auth */,
 				839F686022E8822D00FD6A61 /* Main.storyboard */,
@@ -195,6 +204,41 @@
 			isa = PBXGroup;
 			children = (
 				C83CDBA322E8C03D00723759 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C83CDBAD22E8D28400723759 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				C83CDBB722E8E2BE00723759 /* ViewModel */,
+				C83CDBB422E8DE7800723759 /* Service */,
+				C83CDBAE22E8D2EA00723759 /* Model */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		C83CDBAE22E8D2EA00723759 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C83CDBAF22E8D2FE00723759 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C83CDBB422E8DE7800723759 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C83CDBB222E8DAA700723759 /* PostRequestFactory.swift */,
+				C83CDBB522E8DEA200723759 /* PostService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C83CDBB722E8E2BE00723759 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C83CDBB822E8E2CF00723759 /* PostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -337,8 +381,12 @@
 				839F685F22E8822D00FD6A61 /* ViewController.swift in Sources */,
 				C83CDBA822E8CD3800723759 /* ScreenManager.swift in Sources */,
 				83409E6C22E89934006F8A96 /* Storyboards.swift in Sources */,
+				C83CDBB622E8DEA200723759 /* PostService.swift in Sources */,
 				C83CDBA622E8CAC700723759 /* SignupViewController.swift in Sources */,
+				C83CDBB322E8DAA700723759 /* PostRequestFactory.swift in Sources */,
+				C83CDBB922E8E2CF00723759 /* PostViewModel.swift in Sources */,
 				83409E6D22E89934006F8A96 /* Assets.swift in Sources */,
+				C83CDBB022E8D2FE00723759 /* Post.swift in Sources */,
 				C83CDBA422E8C03E00723759 /* UserViewModel.swift in Sources */,
 				C83CDB9E22E8BC4200723759 /* AuthService.swift in Sources */,
 				83409E6E22E89934006F8A96 /* Colors.swift in Sources */,
