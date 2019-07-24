@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CoZ-5E-5N2">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CoZ-5E-5N2">
                                 <rect key="frame" x="32" y="400" width="350" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="zfo-Py-wDf"/>
@@ -27,7 +27,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RDh-mx-bNg">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RDh-mx-bNg">
                                 <rect key="frame" x="33" y="472" width="348" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="4hU-Qa-9xU"/>
@@ -51,42 +51,45 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bi4-P0-jTh">
-                                <rect key="frame" x="134" y="205" width="147" height="155"/>
+                                <rect key="frame" x="133.5" y="205" width="147" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="f3s-k4-upL"/>
+                                    <constraint firstAttribute="height" constant="155" id="hPT-zQ-DZx"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6df-Rv-DzX">
-                                <rect key="frame" x="104" y="731" width="206" height="15"/>
+                                <rect key="frame" x="104" y="732" width="206" height="30"/>
                                 <state key="normal" title="Ainda nao tem conta?"/>
                                 <connections>
                                     <action selector="signupButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EcS-jj-O6d"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x4U-qr-KlD">
-                                <rect key="frame" x="87" y="705" width="240" height="1"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4U-qr-KlD">
+                                <rect key="frame" x="54" y="705" width="306" height="2"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="Wmw-qj-G8Y"/>
+                                    <constraint firstAttribute="height" constant="2" id="Wmw-qj-G8Y"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6df-Rv-DzX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="2Za-1u-oyt"/>
+                            <constraint firstItem="x4U-qr-KlD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="7HA-mX-Z9L"/>
                             <constraint firstItem="CoZ-5E-5N2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="7Xl-cN-6DB"/>
                             <constraint firstItem="6df-Rv-DzX" firstAttribute="top" secondItem="x4U-qr-KlD" secondAttribute="bottom" constant="25" id="88D-67-iHy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bi4-P0-jTh" secondAttribute="trailing" constant="133" id="8sT-Y1-4lq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bi4-P0-jTh" secondAttribute="bottom" constant="502" id="Fhc-87-ZQ1"/>
+                            <constraint firstItem="Bi4-P0-jTh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8fd-iC-C68"/>
                             <constraint firstItem="r8O-XQ-36S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="JwM-4d-BPr"/>
                             <constraint firstItem="RDh-mx-bNg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="Mik-5j-DYX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r8O-XQ-36S" secondAttribute="trailing" constant="100" id="TZU-nj-BCV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CoZ-5E-5N2" secondAttribute="trailing" constant="32" id="VKs-Uv-ydM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6df-Rv-DzX" secondAttribute="trailing" constant="104" id="Z3K-dX-n1g"/>
                             <constraint firstItem="r8O-XQ-36S" firstAttribute="top" secondItem="RDh-mx-bNg" secondAttribute="bottom" constant="40" id="dXe-Pm-BcI"/>
-                            <constraint firstItem="Bi4-P0-jTh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="iX2-3V-1zO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x4U-qr-KlD" secondAttribute="trailing" constant="54" id="hnj-Fj-ugX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RDh-mx-bNg" secondAttribute="trailing" constant="33" id="jHl-Hs-8z6"/>
                             <constraint firstItem="RDh-mx-bNg" firstAttribute="top" secondItem="CoZ-5E-5N2" secondAttribute="bottom" constant="24" id="jUe-PW-NpS"/>
                             <constraint firstItem="CoZ-5E-5N2" firstAttribute="top" secondItem="Bi4-P0-jTh" secondAttribute="bottom" constant="40" id="llb-Ir-Vbe"/>
                             <constraint firstItem="x4U-qr-KlD" firstAttribute="top" secondItem="r8O-XQ-36S" secondAttribute="bottom" constant="105" id="pWG-IM-8nW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6df-Rv-DzX" secondAttribute="bottom" constant="116" id="ts6-Ow-P0T"/>
                             <constraint firstItem="Bi4-P0-jTh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="161" id="wXh-XP-2sZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
