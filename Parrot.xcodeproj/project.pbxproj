@@ -20,6 +20,9 @@
 		839F686222E8822D00FD6A61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F686022E8822D00FD6A61 /* Main.storyboard */; };
 		839F686422E8822F00FD6A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839F686322E8822F00FD6A61 /* Assets.xcassets */; };
 		839F686722E8822F00FD6A61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F686522E8822F00FD6A61 /* LaunchScreen.storyboard */; };
+		C83CDB9C22E8B96600723759 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDB9B22E8B96600723759 /* AuthRequestFactory.swift */; };
+		C83CDB9E22E8BC4200723759 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDB9D22E8BC4200723759 /* AuthService.swift */; };
+		C83CDBA422E8C03E00723759 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDBA322E8C03D00723759 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		839F686322E8822F00FD6A61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		839F686622E8822F00FD6A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		839F686822E8822F00FD6A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C83CDB9B22E8B96600723759 /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
+		C83CDB9D22E8BC4200723759 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C83CDBA322E8C03D00723759 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,26 +119,12 @@
 		83409E6022E8899B006F8A96 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				C83CDBA222E8C01B00723759 /* ViewModel */,
+				C83CDB9A22E8B95100723759 /* Service */,
 				83409E6422E88B9E006F8A96 /* Controller */,
 				83409E6322E88B98006F8A96 /* Model */,
-				83409E6222E88B91006F8A96 /* Service */,
-				83409E6122E88B82006F8A96 /* ViewModel */,
 			);
 			path = Auth;
-			sourceTree = "<group>";
-		};
-		83409E6122E88B82006F8A96 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		83409E6222E88B91006F8A96 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		83409E6322E88B98006F8A96 /* Model */ = {
@@ -179,6 +171,23 @@
 				839F686822E8822F00FD6A61 /* Info.plist */,
 			);
 			path = Parrot;
+			sourceTree = "<group>";
+		};
+		C83CDB9A22E8B95100723759 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C83CDB9B22E8B96600723759 /* AuthRequestFactory.swift */,
+				C83CDB9D22E8BC4200723759 /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C83CDBA222E8C01B00723759 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C83CDBA322E8C03D00723759 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,9 +328,12 @@
 				839F685F22E8822D00FD6A61 /* ViewController.swift in Sources */,
 				83409E6C22E89934006F8A96 /* Storyboards.swift in Sources */,
 				83409E6D22E89934006F8A96 /* Assets.swift in Sources */,
+				C83CDBA422E8C03E00723759 /* UserViewModel.swift in Sources */,
+				C83CDB9E22E8BC4200723759 /* AuthService.swift in Sources */,
 				83409E6E22E89934006F8A96 /* Colors.swift in Sources */,
 				839F685D22E8822D00FD6A61 /* AppDelegate.swift in Sources */,
 				83409E6B22E89934006F8A96 /* Localizable.swift in Sources */,
+				C83CDB9C22E8B96600723759 /* AuthRequestFactory.swift in Sources */,
 				83409E6622E88ED1006F8A96 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
