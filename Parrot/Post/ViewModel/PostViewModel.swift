@@ -21,6 +21,16 @@ class PostViewModel {
         }
     }
     
+    static func update(post: Post) {
+        try? uiRealm.write {
+            uiRealm.add(post, update: .modified)
+        }
+    }
+    
+    static func delete(post: Post) {
+        uiRealm.delete(post)
+    }
+    
     fileprivate static func getAsView(post: Post?) -> PostView {
         
         guard let post = post else {
@@ -60,8 +70,8 @@ class PostViewModel {
     
     
     static func getAsModel(postView: PostView) -> Post {
-        var post = Post()
-        post.message = postView.message ?? ""
+        let post = Post()
+        post.message = postView.message
         
         return post
     }

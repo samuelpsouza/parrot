@@ -28,7 +28,6 @@ class PostService {
                 switch response.result {
                 case .success:
                     if let posts = response.result.value {
-                        print(posts)
                         PostViewModel.save(object: posts)
                     }
                     
@@ -46,7 +45,7 @@ class PostService {
                 switch response.result {
                 case .success:
                     if let post = response.result.value {
-                        print(post)
+                        PostViewModel.save(object: [post])
                     }
                     
                     self.delegate.success()
@@ -62,7 +61,7 @@ class PostService {
                 switch response.result {
                 case .success:
                     if let post = response.result.value {
-                        print(post)
+                        PostViewModel.update(post: post)
                     }
                     
                     self.delegate.success()
@@ -78,7 +77,7 @@ class PostService {
                 switch response.result {
                 case .success:
                     if let post = response.result.value {
-                        print(post)
+                        PostViewModel.delete(post: post)
                     }
                     
                     self.delegate.success()
