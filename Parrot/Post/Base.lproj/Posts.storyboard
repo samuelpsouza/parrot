@@ -10,6 +10,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Post Tab Bar View Controller-->
+        <scene sceneID="ExT-lI-SoE">
+            <objects>
+                <tabBarController storyboardIdentifier="PostTabBarViewController" id="tC4-dk-lLd" customClass="PostTabBarViewController" customModule="parrot" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="92z-Oz-fHO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V8d-7n-fLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1914" y="-141"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ngz-Ko-p7R">
+            <objects>
+                <viewController id="1Ii-IP-vYh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hUL-fG-p8o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jrh-Rr-PLN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBZ-Nh-Ot2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-857" y="-141"/>
+        </scene>
         <!--Posts View Controller-->
         <scene sceneID="ebW-lc-LTs">
             <objects>
@@ -17,13 +46,13 @@
                     <view key="view" contentMode="scaleToFill" id="c2b-4N-2ci">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8X8-5S-4c2"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTV-ai-5Sh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="-176"/>
+            <point key="canvasLocation" x="206" y="-141"/>
         </scene>
     </scenes>
 </document>

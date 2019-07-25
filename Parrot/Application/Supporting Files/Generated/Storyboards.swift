@@ -70,6 +70,8 @@ internal enum StoryboardScene {
   internal enum Posts: StoryboardType {
     internal static let storyboardName = "Posts"
 
+    internal static let postTabBarViewController = SceneType<parrot.PostTabBarViewController>(storyboard: Posts.self, identifier: "PostTabBarViewController")
+
     internal static let postsViewController = SceneType<parrot.PostsViewController>(storyboard: Posts.self, identifier: "PostsViewController")
   }
 }

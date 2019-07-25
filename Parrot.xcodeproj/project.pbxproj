@@ -20,6 +20,7 @@
 		839F686222E8822D00FD6A61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F686022E8822D00FD6A61 /* Main.storyboard */; };
 		839F686422E8822F00FD6A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839F686322E8822F00FD6A61 /* Assets.xcassets */; };
 		839F686722E8822F00FD6A61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F686522E8822F00FD6A61 /* LaunchScreen.storyboard */; };
+		83B73AC722E9EDCC00647E1D /* PostTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B73AC622E9EDCC00647E1D /* PostTabBarViewController.swift */; };
 		C83CDB9C22E8B96600723759 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDB9B22E8B96600723759 /* AuthRequestFactory.swift */; };
 		C83CDB9E22E8BC4200723759 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDB9D22E8BC4200723759 /* AuthService.swift */; };
 		C83CDBA422E8C03E00723759 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDBA322E8C03D00723759 /* UserViewModel.swift */; };
@@ -52,6 +53,7 @@
 		839F686322E8822F00FD6A61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		839F686622E8822F00FD6A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		839F686822E8822F00FD6A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B73AC622E9EDCC00647E1D /* PostTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTabBarViewController.swift; sourceTree = "<group>"; };
 		C83CDB9B22E8B96600723759 /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
 		C83CDB9D22E8BC4200723759 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C83CDBA322E8C03D00723759 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				C83CDBC622E8F08200723759 /* PostsViewController.swift */,
+				83B73AC622E9EDCC00647E1D /* PostTabBarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 			files = (
 				839F685F22E8822D00FD6A61 /* ViewController.swift in Sources */,
 				C83CDBA822E8CD3800723759 /* ScreenManager.swift in Sources */,
+				83B73AC722E9EDCC00647E1D /* PostTabBarViewController.swift in Sources */,
 				83409E6C22E89934006F8A96 /* Storyboards.swift in Sources */,
 				C83CDBB622E8DEA200723759 /* PostService.swift in Sources */,
 				C83CDBA622E8CAC700723759 /* SignupViewController.swift in Sources */,
