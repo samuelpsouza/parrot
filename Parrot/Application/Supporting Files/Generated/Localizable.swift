@@ -12,6 +12,19 @@ internal enum L10n {
     /// Ok
     internal static let ok = L10n.tr("Localizable", "common.ok")
   }
+
+  internal enum Signup {
+
+    internal enum Main {
+      /// Crie sua conta
+      internal static let title = L10n.tr("Localizable", "signup.main.title")
+    }
+
+    internal enum Picture {
+      /// Foto
+      internal static let title = L10n.tr("Localizable", "signup.picture.title")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length nesting type_body_length type_name
 

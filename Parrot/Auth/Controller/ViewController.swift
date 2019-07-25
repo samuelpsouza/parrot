@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         self.service = AuthService.init(delegate: self)
         self.logoImageView.image = Asset.logo.image
@@ -35,7 +36,7 @@ class ViewController: UIViewController {
     
     @IBAction func signupButton(_ sender: Any) {
         let controller = StoryboardScene.Main.signupViewController.instantiate()
-        self.present(controller, animated: true)
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 }
 

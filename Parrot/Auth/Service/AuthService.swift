@@ -40,7 +40,7 @@ class AuthService {
         switch response.result {
         case .success:
             if let user = response.result.value {
-                if let token = response.response?.allHeaderFields["Access-Token"] as? String {
+                if let token = response.response?.allHeaderFields["token"] as? String {
                     
                     user.token = token
                     UserViewModel.save(object: user)
