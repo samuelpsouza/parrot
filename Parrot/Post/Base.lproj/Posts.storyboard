@@ -46,7 +46,17 @@
                     <view key="view" contentMode="scaleToFill" id="c2b-4N-2ci">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6va-oY-YTE">
+                                <rect key="frame" x="0.0" y="384" width="414" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6va-oY-YTE" firstAttribute="leading" secondItem="8X8-5S-4c2" secondAttribute="leading" id="WH5-ZU-dmB"/>
+                            <constraint firstItem="8X8-5S-4c2" firstAttribute="trailing" secondItem="6va-oY-YTE" secondAttribute="trailing" id="cHE-H2-psw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8X8-5S-4c2"/>
                     </view>
                 </viewController>

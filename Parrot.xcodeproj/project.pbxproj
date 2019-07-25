@@ -21,6 +21,8 @@
 		839F686422E8822F00FD6A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839F686322E8822F00FD6A61 /* Assets.xcassets */; };
 		839F686722E8822F00FD6A61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839F686522E8822F00FD6A61 /* LaunchScreen.storyboard */; };
 		83B73AC722E9EDCC00647E1D /* PostTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B73AC622E9EDCC00647E1D /* PostTabBarViewController.swift */; };
+		83B73ACB22E9F79600647E1D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B73AC922E9F79600647E1D /* PostTableViewCell.swift */; };
+		83B73ACC22E9F79600647E1D /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B73ACA22E9F79600647E1D /* PostTableViewCell.xib */; };
 		C83CDB9C22E8B96600723759 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDB9B22E8B96600723759 /* AuthRequestFactory.swift */; };
 		C83CDB9E22E8BC4200723759 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDB9D22E8BC4200723759 /* AuthService.swift */; };
 		C83CDBA422E8C03E00723759 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83CDBA322E8C03D00723759 /* UserViewModel.swift */; };
@@ -54,6 +56,8 @@
 		839F686622E8822F00FD6A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		839F686822E8822F00FD6A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83B73AC622E9EDCC00647E1D /* PostTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTabBarViewController.swift; sourceTree = "<group>"; };
+		83B73AC922E9F79600647E1D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		83B73ACA22E9F79600647E1D /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		C83CDB9B22E8B96600723759 /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
 		C83CDB9D22E8BC4200723759 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C83CDBA322E8C03D00723759 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -197,6 +201,15 @@
 			path = Parrot;
 			sourceTree = "<group>";
 		};
+		83B73AC822E9F75A00647E1D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				83B73AC922E9F79600647E1D /* PostTableViewCell.swift */,
+				83B73ACA22E9F79600647E1D /* PostTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		C83CDB9A22E8B95100723759 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +267,7 @@
 		C83CDBBC22E8EAEA00723759 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				83B73AC822E9F75A00647E1D /* Cells */,
 				C83CDBC622E8F08200723759 /* PostsViewController.swift */,
 				83B73AC622E9EDCC00647E1D /* PostTabBarViewController.swift */,
 			);
@@ -325,6 +339,7 @@
 				83409E5E22E884A7006F8A96 /* Localizable.strings in Resources */,
 				839F686722E8822F00FD6A61 /* LaunchScreen.storyboard in Resources */,
 				83409E5C22E88485006F8A96 /* Colors.json in Resources */,
+				83B73ACC22E9F79600647E1D /* PostTableViewCell.xib in Resources */,
 				839F686422E8822F00FD6A61 /* Assets.xcassets in Resources */,
 				839F686222E8822D00FD6A61 /* Main.storyboard in Resources */,
 			);
@@ -403,6 +418,7 @@
 				C83CDBB622E8DEA200723759 /* PostService.swift in Sources */,
 				C83CDBA622E8CAC700723759 /* SignupViewController.swift in Sources */,
 				C83CDBB322E8DAA700723759 /* PostRequestFactory.swift in Sources */,
+				83B73ACB22E9F79600647E1D /* PostTableViewCell.swift in Sources */,
 				C83CDBB922E8E2CF00723759 /* PostViewModel.swift in Sources */,
 				83409E6D22E89934006F8A96 /* Assets.swift in Sources */,
 				C83CDBB022E8D2FE00723759 /* Post.swift in Sources */,
