@@ -27,6 +27,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     
         print("DOCUMENTS: ", Realm.Configuration.defaultConfiguration.fileURL ?? "")
+        SessionControl.setHeaders()
+        
+        if SessionControl.isSessionActive {
+            UIApplication.shared.keyWindow?.rootViewController = UINavigationController(rootViewController: StoryboardScene.Posts.postTabBarViewController.instantiate())
+        } else {
+            UIApplication.shared.keyWindow?.rootViewController = StoryboardScene.Main.viewController.instantiate()
+        }
+        
+        self.window?.makeKeyAndVisible()
         return true
     }
 

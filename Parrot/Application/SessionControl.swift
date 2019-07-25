@@ -16,16 +16,13 @@ class SessionControl {
     }
     
     static var isSessionActive: Bool {
-        if self.user != nil {
-            return true
-        }
-        return false
+        return self.user != nil
     }
     
     static func setHeaders() {
         if let user = self.user {
             if let token = user.token {
-                self.headers["Access-Token"] = token
+                self.headers["token"] = token
             }
         }
     }

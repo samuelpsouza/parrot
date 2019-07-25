@@ -7,21 +7,20 @@
 //
 
 import UIKit
+import Reusable
 
-class PostTableViewCell: UITableViewCell {
+class PostTableViewCell: UITableViewCell, NibReusable {
 
     @IBOutlet weak var postImageView: UIImageView!
     @IBOutlet weak var ownerProfileImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        self.ownerProfileImageView.layer.cornerRadius = self.ownerProfileImageView.frame.height / 2
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
+    func bind(post: PostView) {
         self.postImageView.image = Asset.postDefault.image
     }
-    
 }
