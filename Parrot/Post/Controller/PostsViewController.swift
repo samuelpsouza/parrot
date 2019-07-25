@@ -10,7 +10,9 @@ import UIKit
 
 class PostsViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     var service: PostService!
+    var posts: [PostView] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
