@@ -46,6 +46,7 @@ internal struct ColorAsset {
 internal enum Asset {
   internal static let logoWhite = ImageAsset(name: "Logo-White")
   internal static let logo = ImageAsset(name: "Logo")
+  internal static let ownerDefault = ImageAsset(name: "Owner-Default")
   internal static let postDefault = ImageAsset(name: "Post-Default")
   internal static let tabBarBell = ImageAsset(name: "TabBar-Bell")
   internal static let tabBarHouse = ImageAsset(name: "TabBar-House")
@@ -58,6 +59,7 @@ internal enum Asset {
   internal static let allImages: [ImageAsset] = [
     logoWhite,
     logo,
+    ownerDefault,
     postDefault,
     tabBarBell,
     tabBarHouse,

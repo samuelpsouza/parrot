@@ -15,8 +15,12 @@ class PostRequestFactory {
                                  method: .get, headers: SessionControl.headers)
     }
     
-    static func postPost(post: Post) -> DataRequest {
-        return Alamofire.request(BASE_URL + "/postagem", method: .post, parameters: post.toJSON(), encoding: JSONEncoding.default, headers: SessionControl.headers)
+    static func postPost(post: String) -> DataRequest {
+        let postForm = [
+            "mensagem": post
+        ]
+        
+        return Alamofire.request(BASE_URL + "/postagem", method: .post, parameters: postForm, encoding: JSONEncoding.default, headers: SessionControl.headers)
     }
     
     static func putPost(post: Post) -> DataRequest {

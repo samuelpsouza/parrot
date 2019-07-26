@@ -30,9 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SessionControl.setHeaders()
         
         if SessionControl.isSessionActive {
-            UIApplication.shared.keyWindow?.rootViewController = UINavigationController(rootViewController: StoryboardScene.Posts.postTabBarViewController.instantiate())
+            self.window?.rootViewController = UINavigationController(rootViewController: StoryboardScene.Posts.postTabBarViewController.instantiate())
         } else {
-            UIApplication.shared.keyWindow?.rootViewController = StoryboardScene.Main.viewController.instantiate()
+            self.window?.rootViewController = StoryboardScene.Main.viewController.instantiate()
         }
         
         self.window?.makeKeyAndVisible()

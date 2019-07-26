@@ -13,8 +13,8 @@ import ObjectMapper
 class Post: Object, Mappable {
     var id = RealmOptional<Int>()
     @objc dynamic var message: String?
-    @objc dynamic var userId: String?
-
+    @objc dynamic var author: String?
+    var likes = RealmOptional<Int>()
     
     required convenience init?(map: Map) {
         self.init()
@@ -23,7 +23,8 @@ class Post: Object, Mappable {
     func mapping(map: Map) {
         self.id.value   <- map["id"]
         self.message   <- map["mensagem"]
-        self.userId <- map["usuario_id"]
+        self.author <- map["postagem"]
+        self.likes.value   <- map["qtd_curtidas"]
     }
     
     override static func primaryKey() -> String? {

@@ -39,7 +39,7 @@ class PostService {
     
     }
     
-    func postPost(post: Post) {
+    func postPost(post: String) {
         PostRequestFactory.postPost(post: post).validate()
             .responseObject { (response: DataResponse<Post>) in
                 switch response.result {
