@@ -14,6 +14,16 @@ struct PostView {
     var message = ""
     var author = ""
     var likes = 0
+    var liked = false
+    var postAuthor = AuthorView()
+}
+
+struct AuthorView {
+    var id = 0
+    var name = ""
+    var username = ""
+    var email = ""
+    var picture = ""
 }
 
 class PostViewModel {
@@ -42,8 +52,14 @@ class PostViewModel {
         var postView = PostView()
         postView.id = post.id.value ?? 0
         postView.message = post.message ?? ""
-        postView.author = post.author ?? ""
         postView.likes = post.likes.value ?? 0
+        postView.liked = post.liked.value ?? false
+        postView.postAuthor.id = post.postAuthor?.id.value ?? 0
+        postView.postAuthor.name = post.postAuthor?.name ?? ""
+        postView.postAuthor.email = post.postAuthor?.email ?? ""
+        postView.postAuthor.picture = post.postAuthor?.picture ?? ""
+        postView.postAuthor.username = post.postAuthor?.username ?? ""
+        
         return postView
     }
     
@@ -74,6 +90,7 @@ class PostViewModel {
     
     static func getAsModel(postView: PostView) -> Post {
         let post = Post()
+        post.id.value = postView.id
         post.message = postView.message
         
         return post

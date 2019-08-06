@@ -80,7 +80,7 @@ extension PostsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath) as PostTableViewCell
-        cell.bind(post: self.posts[indexPath.row])
+        cell.bind(post: self.posts[indexPath.row], delegate: self)
         return cell
     }
     
@@ -111,4 +111,31 @@ extension PostsViewController: UITextViewDelegate {
         }
         return true
     }
+}
+
+extension PostsViewController: PostTableViewCellDelegate {
+    func showAlert(post: PostView) {
+        let optionMenu = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .actionSheet)
+        
+        // 2
+        let editAction = UIAlertAction(title: "Edit", style: .default)
+        let deleteAction = UIAlertAction(title: "Delete", style: .default)
+        
+        // 3
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        
+        // 4
+        optionMenu.addAction(editAction)
+        optionMenu.addAction(deleteAction)
+        optionMenu.addAction(cancelAction)
+        
+        // 5
+        self.present(optionMenu, animated: true, completion: nil)
+    }
+    
+    func like(post: PostView) {
+        
+    }
+    
+    
 }

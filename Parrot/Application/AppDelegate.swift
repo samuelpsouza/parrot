@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if SessionControl.isSessionActive {
             self.window?.rootViewController = UINavigationController(rootViewController: StoryboardScene.Posts.postTabBarViewController.instantiate())
         } else {
-            self.window?.rootViewController = StoryboardScene.Main.viewController.instantiate()
+            self.window?.rootViewController = StoryboardScene.Main.initialScene.instantiate()
         }
         
         self.window?.makeKeyAndVisible()

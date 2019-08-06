@@ -14,7 +14,11 @@ class ScreenManager {
         if SessionControl.isSessionActive {
             UIApplication.shared.keyWindow?.rootViewController = UINavigationController(rootViewController: StoryboardScene.Posts.postTabBarViewController.instantiate())
         } else {
-            UIApplication.shared.keyWindow?.rootViewController = StoryboardScene.Main.viewController.instantiate()
+            UIApplication.shared.keyWindow?.rootViewController = StoryboardScene.Main.initialScene.instantiate()
         }
+    }
+    
+    static func hideOptions(id: Int) ->Bool {
+        return SessionControl.user?.id.value == id
     }
 }
