@@ -71,13 +71,45 @@ class PostService {
         }
     }
     
-    func deletePost(post: Post) {
-        PostRequestFactory.deletePost(post: post).validate()
+    func deletePost(post: PostView) {
+        PostRequestFactory.deletePost(post: post.id).validate()
             .responseObject { (response: DataResponse<Post>) in
                 switch response.result {
                 case .success:
                     if let post = response.result.value {
                         PostViewModel.delete(post: post)
+                    }
+                    
+                    self.delegate.success()
+                case .failure(let error):
+                    self.delegate.failure(error: error.localizedDescription)
+                }
+        }
+    }
+    
+    func postLike(post: PostView) {
+        PostRequestFactory.postLike(post: post.id).validate()
+            .responseObject { (response: DataResponse<Post>) in
+                switch response.result {
+                case .success:
+                    if let post = response.result.value {
+                        PostViewModel.update(post: post)
+                    }
+                    
+                    self.delegate.success()
+                case .failure(let error):
+                    self.delegate.failure(error: error.localizedDescription)
+                }
+        }
+    }
+    
+    func deleteLike(post: PostView) {
+        PostRequestFactory.deleteLike(post: post.id).validate()
+            .responseObject { (response: DataResponse<Post>) in
+                switch response.result {
+                case .success:
+                    if let post = response.result.value {
+                        PostViewModel.update(post: post)
                     }
                     
                     self.delegate.success()

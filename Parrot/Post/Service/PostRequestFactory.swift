@@ -28,9 +28,18 @@ class PostRequestFactory {
         return Alamofire.request(BASE_URL + "/postagem/" + id, method: .put, parameters: post.toJSON(), encoding: JSONEncoding.default, headers: SessionControl.headers)
     }
     
-    static func deletePost(post: Post) -> DataRequest {
-        let id = String(post.id.value ?? 0)
+    static func deletePost(post: Int) -> DataRequest {
+        let id = String(post)
         return Alamofire.request(BASE_URL + "/postagem/" + id, method: .delete, encoding: JSONEncoding.default, headers: SessionControl.headers)
     }
     
+    static func postLike(post: Int) -> DataRequest {
+        let id = String(post)
+        return Alamofire.request(BASE_URL + "/curtir/" + id, method: .post, encoding: JSONEncoding.default, headers: SessionControl.headers)
+    }
+    
+    static func deleteLike(post: Int) -> DataRequest {
+        let id = String(post)
+        return Alamofire.request(BASE_URL + "/curtir/" + id, method: .delete, encoding: JSONEncoding.default, headers: SessionControl.headers)
+    }
 }

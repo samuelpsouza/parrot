@@ -26,7 +26,7 @@ class Post: Object, Mappable {
         self.id.value       <- map["id"]
         self.message        <- map["mensagem"]
         self.author         <- map["postagem"]
-        self.likes.value    <- map["qtd_curtidas"]
+        self.likes.value    <- map["curtidas"]
         self.liked.value    <- map["curtido"]
         self.postAuthor     <- map["autor"]
     }

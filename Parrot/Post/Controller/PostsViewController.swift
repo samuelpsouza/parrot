@@ -114,12 +114,15 @@ extension PostsViewController: UITextViewDelegate {
 }
 
 extension PostsViewController: PostTableViewCellDelegate {
+
     func showAlert(post: PostView) {
         let optionMenu = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .actionSheet)
         
         // 2
         let editAction = UIAlertAction(title: "Edit", style: .default)
-        let deleteAction = UIAlertAction(title: "Delete", style: .default)
+        let deleteAction = UIAlertAction(title: "Delete", style: .default){ (action) in
+            self.service.deletePost(post: post)
+        }
         
         // 3
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
@@ -134,8 +137,11 @@ extension PostsViewController: PostTableViewCellDelegate {
     }
     
     func like(post: PostView) {
-        
+        self.service.postLike(post: post)
     }
     
+    func deslike(post: PostView) {
+        self.service.deleteLike(post: post)
+    }
     
 }

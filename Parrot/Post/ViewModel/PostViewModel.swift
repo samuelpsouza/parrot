@@ -40,7 +40,11 @@ class PostViewModel {
     }
     
     static func delete(post: Post) {
-        uiRealm.delete(post)
+        if let post = uiRealm.object(ofType: Post.self, forPrimaryKey: post.id) {
+            try? uiRealm.write {
+                uiRealm.delete(post)
+            }
+        }
     }
     
     fileprivate static func getAsView(post: Post?) -> PostView {
