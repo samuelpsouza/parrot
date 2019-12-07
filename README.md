@@ -13,16 +13,25 @@
 ## Ferramentas:
 
 Xcode: https://itunes.apple.com/br/app/xcode/id497799835?mt=12
+
 Cocoapods: https://cocoapods.org
+
 Postman: https://www.getpostman.com
+
 Realm Studio: https://realm.io/products/realm-studio
 
 ## Bibliotecas
 
 Realm: https://realm.io/docs/swift/latest
+
 Alamofire: https://github.com/Alamofire/Alamofire
+
 ObjectMapper: https://github.com/Hearst-DD/ObjectMapper
+
 AlamofireObjectMapper: https://github.com/tristanhimmelman/AlamofireObjectMapper
+
 SwiftGen: https://github.com/SwiftGen/SwiftGen
+
 Reusable: https://github.com/AliSoftware/Reusable
+
 Kingfisher: https://github.com/onevcat/Kingfisher
